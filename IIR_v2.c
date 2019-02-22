@@ -111,4 +111,8 @@ void mexFunction (int nlhs, mxArray *plhs[],
 
 }
 
+/*Attention! This part of code:
+	*(filt_buf + j*filter_length + i)
+and similar parts is advisedly used, because there is a rotation problem of the input array filt_buf.
+
 /* List of MATLAB functions */
